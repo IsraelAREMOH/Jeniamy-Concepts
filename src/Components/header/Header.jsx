@@ -1,7 +1,7 @@
 import "./Header.css";
 import { Cardbutton } from "../../Components";
 import TakaDollar from "../../assets/TakaDollar.png";
-import siteimage1 from "../../assets/siteimage1.png";
+import siteImage1 from "../../assets/siteImage1.png";
 import merge from "../../assets/merge.png";
 import finance from "../../assets/finance.png";
 const Header = () => {
@@ -54,7 +54,7 @@ const Header = () => {
               <li>
                 <div className="service-card">
                   <div className="card-icon">
-                    <img className="ion-icon" src={siteimage1} />
+                    <img className="ion-icon" src={siteImage1} />
                   </div>
                   <h3 className="mb-3">Food Production & Processing</h3>
                   <p className="text-secondary">
