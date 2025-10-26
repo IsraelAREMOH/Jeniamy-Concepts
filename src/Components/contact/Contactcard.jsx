@@ -69,21 +69,32 @@ const Contactcard = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      const API_BASE_URL =
+        import.meta.env.MODE === "development"
+          ? "http://localhost:5000"
+          : "https://jeniamy-concepts.onrender.com";
+
+      const response = await fetch(`${API_BASE_URL}/send-email`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
+      let result;
+      try {
+        result = await response.json();
+      } catch {
+        result = {};
+      }
 
-      if (result.success) {
+      if (response.ok && result.success) {
         setSuccessMessage("✅ Email sent successfully!");
         resetForm();
       } else {
         setSuccessMessage("❌ Failed to send email. Please try again.");
       }
     } catch (error) {
+      console.error("Network or server error:", error);
       setSuccessMessage("⚠️ An error occurred. Please try again later.");
     }
 
