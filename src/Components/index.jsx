@@ -1,0 +1,17 @@
+export { default as Header } from "./header/Header";
+export { default as Aboutcard } from "./about/AboutCard";
+export { default as Servicecard } from "./service/Servicecard";
+export { default as Overlay } from "./overlay/OverLay";
+export { default as Details } from "./detail/Details";
+export { default as Headersection } from "./sectionheader/Headersection";
+export { default as AboutSectionCard } from "./aboutsection/AboutSectionCard";
+export { default as Teamcard } from "./teamcard/Teamcard";
+export { default as AboutoverLay } from "./aboutoverlay/Aboutoverlay";
+export { default as Servicebanner } from "./servicesection/Servicebanner";
+export { default as Cardbutton } from "./cardbutton/Cardbutton";
+export { default as Cardservice } from "./servicesection/Cardservice";
+export { default as Cardservice1 } from "./servicesection/Cardservice1";
+export { default as Cardservice2 } from "./servicesection/Cardservice2";
+export { default as Contactcard } from "./contact/Contactcard";
+export { default as Testimonial } from "./testimonial/Testimonial";
+export { default as Aboutheader } from "./aboutheader/Aboutheader";

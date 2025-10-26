@@ -1,0 +1,287 @@
+.main-hero {
+  position: relative;
+  background-color: #ffff;
+}
+
+.hero-banner {
+  padding-block-start: 80px;
+}
+
+.hero-bg {
+  background-image: url(../../assets/AIimage.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.hero-content {
+  padding-block: 180px;
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+  place-content: start;
+  text-align: start;
+  color: azure;
+}
+
+.hero-title {
+  line-height: inherit;
+  font-size: 1.25em;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero_span {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: inherit;
+  font-size: 3em;
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-span {
+  font-size: 30px;
+}
+
+.hero-text {
+  display: inline;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  font-family: sans-serif;
+  color: aliceblue;
+  margin: 0px;
+}
+
+.hero-wrapper {
+  background-color: white;
+  margin-block-start: -100px;
+  width: calc(100% - 20px);
+  margin-inline: auto;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  overflow: hidden;
+}
+
+.form-tab {
+  padding: 16px;
+  border-block-end: solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 20px;
+  text-align: center;
+}
+
+.form-tab h2 {
+  align-items: center;
+  color: #0399;
+  font-family: sans-serif;
+  font-size: 34px;
+  line-height: 1.8;
+  letter-spacing: normal;
+  font-family: "Mossarat";
+}
+
+.p-text {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.form-tab p {
+  margin: 30px;
+  text-align: center;
+  display: block;
+  font-family: sans-serif;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2.5em 0;
+}
+
+.service-list li {
+  list-style: none;
+}
+
+.service-card {
+  padding: 20px;
+  margin-inline-start: 15px;
+  margin-inline-end: 15px;
+  text-align: center;
+  transition: -3s;
+  border-radius: 10px;
+  z-index: 4;
+  background-color: #5555;
+}
+
+.service-card h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.service-card:hover {
+  box-shadow: 5px;
+}
+
+.service-card .card-icon {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card .card-icon .ion-icon {
+  color: #000;
+  width: 150px;
+  align-items: center;
+  justify-items: center;
+}
+
+.service-card .card-title {
+  margin-block: 25px 12px;
+}
+
+.service-card .tab-btn :is(:hover, :focus) {
+  color: white;
+  background-color: green;
+}
+
+.hero-form {
+  display: grid;
+  gap: 25px;
+  padding: 25px;
+}
+
+.hero-form .input-wrapper {
+  position: relative;
+}
+
+.hero-form :is(.input-label, .input-field) {
+  color: blue;
+}
+
+.hero-form .input-label {
+  font-weight: 500;
+  margin-block-end: 10px;
+}
+
+.hero-form :is(.input-label, .dropdown-list) {
+  min-height: 40px;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding-inline: 15px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-form .dropdown-list:focus {
+  border-color: green;
+}
+
+.hero-form .input-field::placeholder {
+  color: yellow;
+}
+
+/* ------------------------- RESPONSIVE DESIGN ------------------------- */
+
+/* Tablet screens (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  .hero-content {
+    padding-block: 120px;
+    padding-inline: 30px;
+  }
+  .hero_span {
+    font-size: 2.5em;
+  }
+  .service-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .service-card {
+    width: 45%;
+    margin: 10px 0;
+  }
+}
+
+/* Mobile screens (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+  .hero-banner {
+    padding: 12px;
+  }
+  .hero-bg {
+    background-image: linear-gradient(180deg, #1e2f97 0%, #000000 100%);
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-content {
+    padding-block: 100px;
+    padding-inline: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-title {
+    font-size: 1em;
+  }
+  .hero_span {
+    font-size: 1.8em;
+  }
+  .hero-text {
+    font-size: 14px;
+  }
+  .hero-wrapper {
+    padding: 15px 20px;
+    margin-block-start: -60px;
+  }
+  .form-tab h2 {
+    font-size: 24px;
+  }
+  .form-tab p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+  }
+  .service-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+/* Very small devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .hero-content {
+    padding-block: 80px;
+    padding-inline: 15px;
+  }
+  .hero_span {
+    font-size: 1.5em;
+  }
+  .hero-text {
+    font-size: 13px;
+  }
+  .service-card h3 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,72 @@
+.card-service {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  height: 100%;
+  background-color: black;
+}
+
+.card-service-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 2rem;
+  background-color: lavender;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card-service-column {
+  width: 40%;
+  margin: 30px;
+}
+
+.card-service-img {
+  border-radius: 5px;
+  width: 350px;
+  height: 450px;
+  padding-top: 3rem;
+  object-fit: cover;
+}
+
+.card-service-heading {
+  margin-block: 20px 25px;
+  padding-top: 0rem;
+  font-size: 14px;
+  font-family: "Mossarat";
+  color: #16385a;
+}
+
+.card-service p {
+  line-height: 1.8;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Mossarat", sans-serif;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1050px) {
+  .card-service-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-service-column {
+    width: 90%;
+    margin: 15px 0;
+  }
+
+  .card-service-img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-service-img {
+    max-height: 350px;
+    padding-top: 1rem;
+  }
+}

@@ -1,0 +1,108 @@
+.card-img {
+  height: 280px;
+  width: 250px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.team-heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #1e2f97;
+}
+
+.card-cont {
+  background-color: #fff;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.card-p {
+  padding: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #000;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.card {
+  border: none;
+  max-width: 450px;
+}
+
+.col {
+  padding-left: 100px;
+}
+
+.card-col {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  height: 170px;
+  left: 224px;
+  width: 51.6666% !important;
+  top: 30px;
+}
+
+.col-card {
+  width: 100% !important;
+}
+
+/* Tablet view */
+@media only screen and (max-width: 992px) {
+  .card-col {
+    position: relative;
+    left: 0;
+    top: 20px;
+    width: 80% !important;
+    margin: 0 auto;
+  }
+
+  .col {
+    padding-left: 40px !important;
+  }
+
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  .card-col {
+    position: relative;
+    left: 0px;
+    top: 20px !important;
+    width: 100% !important;
+  }
+
+  .col-card {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    align-items: center;
+  }
+
+  .card-img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .col {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .card-p {
+    margin: 10px;
+    padding: 20px;
+  }
+}

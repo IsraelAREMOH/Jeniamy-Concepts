@@ -1,0 +1,207 @@
+/* Base carousel styles */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Carousel.Item {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Carousel.Item img {
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Caption styling (desktop) */
+.carousel-caption {
+  right: initial;
+  top: 10%;
+  bottom: initial;
+  padding-bottom: 1.25rem;
+  text-align: left;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  background-color: rgb(0 0 0 / 22%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  font-family: sans-serif;
+}
+
+/* Indicators */
+.carousel-indicators [data-bs-target]::before {
+  color: #fff !important;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #1e2f97 !important;
+}
+
+/* Sub heading and link */
+.c-sub-heading {
+  font-size: 17px;
+  color: #1e2f97;
+  font-family: sans-serif;
+}
+.link {
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  background: linear-gradient(to right, #fff, #1e2f97);
+  transition: background 0.3s ease;
+}
+.link:hover {
+  background: #16385a;
+  color: #fff;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 767px) {
+  /* Hide carousel */
+  .carousel {
+    display: none;
+  }
+
+  /* Hide captions inside the carousel */
+  .carousel-caption {
+    display: none;
+  }
+
+  /* Mobile-friendly caption alternative with faint background */
+  .carousel-option {
+    position: relative;
+    display: block;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(230, 235, 255, 0.9)
+    );
+    padding: 2.5rem 1.5rem;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+  }
+
+  /* Add faint background image with blur */
+  .carousel-option::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../assets/vegetables.jpg") center/cover no-repeat;
+    filter: blur(6px) brightness(0.8);
+    opacity: 0.4;
+    z-index: -1;
+  }
+
+  .carousel-option .c-sub-heading {
+    font-size: 16px;
+    color: #1e2f97;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .carousel-option h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a1a6c;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-option p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .carousel-option .link {
+    width: 70%;
+    background: linear-gradient(to right, #1e2f97, #3a4ed0);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+
+  .carousel-option .link:hover {
+    background: #16385a;
+  }
+}
+
+/* Mobile version enhancements */
+@media (max-width: 767px) {
+  .carousel {
+    display: none;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+
+  .carousel-option {
+    position: relative;
+    display: block;
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
+    color: #fff;
+    overflow: hidden;
+    text-align: left;
+    transition: background 0.3s ease-in-out;
+  }
+
+  /* Add overlay for text readability */
+  .carousel-option .mobile-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 2rem 1rem;
+    border-radius: 12px;
+  }
+
+  .carousel-option h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-option p {
+    font-size: 0.95rem;
+    color: #f5f5f5;
+    line-height: 1.6;
+  }
+
+  .carousel-option .c-sub-heading {
+    color: #d6e1ff;
+    font-size: 16px;
+    margin-bottom: 0.75rem;
+  }
+
+  .carousel-option .link {
+    width: 70%;
+    background: linear-gradient(to right, #1e2f97, #3a4ed0);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+  }
+}

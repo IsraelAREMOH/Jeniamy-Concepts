@@ -1,0 +1,76 @@
+.card-service2 {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  height: 100%;
+}
+
+.card-service2-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 2rem;
+  background-color: lavender;
+  flex-wrap: wrap;
+}
+
+.card-service2-column {
+  width: 40%;
+  margin: 30px;
+}
+
+.card-service2-info {
+  background-color: #16385a;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.card-service2-img {
+  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+}
+
+.card-service2-heading {
+  max-width: 20ch;
+  margin-block: 20px 25px;
+  padding-top: 2rem;
+  color: #fff;
+  font-family: "Mossarat";
+}
+
+.card-service2-text {
+  line-height: 1.8;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+@media screen and (max-width: 1050px) {
+  .card-service2-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-service2-column {
+    width: 90%;
+    margin: 15px 0;
+  }
+
+  .card-service2-img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+
+  .card-service2-info {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-service2-img {
+    max-height: 350px;
+  }
+}

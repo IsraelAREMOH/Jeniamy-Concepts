@@ -1,0 +1,91 @@
+.site-section {
+  padding: 2.5em 0;
+  background-color: #5555;
+}
+@media (min-width: 768px) {
+  .site-section {
+    padding: 5em 0;
+  }
+}
+.site-section.site-section-sm {
+  padding: 4em 0;
+}
+
+.site-section-heading {
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  position: relative;
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .site-section-heading {
+    font-size: 3rem;
+  }
+}
+.section-sub-title {
+  font-size: 13px;
+  color: #1e2f97;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Mossarat";
+}
+.section-title {
+  color: rgb(234, 240, 243);
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Mossarat";
+}
+@media (max-width: 991.98px) {
+  .section-title {
+    font-size: 20px;
+  }
+}
+.text-centre {
+  line-height: 1.4;
+  color: #fff;
+  font-size: 10px;
+}
+.site-section .container p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.text-danger {
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  margin: 20px;
+  justify-content: space-between;
+}
+.container h4 {
+  color: #000;
+  font-family: "Mossarat";
+  color: #1e2f97;
+}
+.text-secondary {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+.card-img {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  margin-inline: auto;
+  margin-bottom: 5px;
+}
+.card-img img {
+  width: 200px;
+  height: 200px;
+}
+.img-ion-icon {
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}

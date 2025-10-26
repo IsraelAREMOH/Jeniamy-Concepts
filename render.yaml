@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: jeniamy-website
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: node iamyBackend/server.js
+    envVars:
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false

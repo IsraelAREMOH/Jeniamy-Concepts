@@ -1,0 +1,81 @@
+.footer__box {
+  background-color: #1e2f97;
+  color: #fff;
+  padding: 2rem;
+}
+.footer__box img {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  height: auto;
+  align-content: center;
+  justify-self: center;
+  align-items: center;
+}
+
+.footer__box p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+}
+.text p a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.text p a:hover {
+  color: gold !important;
+}
+
+.tops-title {
+  color: gold;
+  font-family: "Mossarat";
+}
+.contact-text .foot-label {
+  color: #1e2f97;
+  margin: 5px;
+}
+.contact-text p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+  text-align: justify;
+  align-items: center;
+}
+
+.footer-icon i {
+  padding: 0.8rem;
+  align-items: center;
+  color: #fff;
+  margin: 0 0.1rem;
+}
+.footer-icon i:hover {
+  background-color: gold;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+}
+.f-icon {
+  font-size: 30px;
+  color: gold;
+  padding-right: 1rem;
+}
+@media screen and (max-width: 45em) {
+  .footer__box {
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media screen and (max-width: 35em) {
+  .footer__box {
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+  }
+}
