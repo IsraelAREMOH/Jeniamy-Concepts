@@ -1,4 +1,4 @@
-import loanimages from "../../assets/loanimages.jpg";
+import loanImages from "../../assets/loanImages.jpg";
 import "./Cardservice1.css";
 import { Cardbutton } from "../../Components";
 
@@ -8,7 +8,7 @@ const Cardservice1 = () => {
       <section className="card-sevice1">
         <div className="card-service1-row">
           <div className="card-service1-column">
-            <img className="card-service1-img" src={loanimages} />
+            <img className="card-service1-img" src={loanImages} />
           </div>
           <div
             className="card-service1-column"
