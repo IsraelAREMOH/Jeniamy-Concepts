@@ -19,6 +19,14 @@ app.use(bodyParser.json());
 // --- API route for contact form ---
 app.post("/send-email", async (req, res) => {
   const { name, email, number, message } = req.body;
+  console.log(
+    "Email user loaded:",
+    process.env.EMAIL_USER ? "✅ Yes" : "❌ No"
+  );
+  console.log(
+    "Email pass loaded:",
+    process.env.EMAIL_PASS ? "✅ Yes" : "❌ No"
+  );
 
   try {
     const transporter = nodemailer.createTransport({
